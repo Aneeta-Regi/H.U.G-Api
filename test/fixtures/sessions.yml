@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_id: 1
+  lesson_id: 1
+  word_missed: 1
+  time: 1
+  student_mood: 1
+  recorded_by: MyString
+
+two:
+  student_id: 1
+  lesson_id: 1
+  word_missed: 1
+  time: 1
+  student_mood: 1
+  recorded_by: MyString

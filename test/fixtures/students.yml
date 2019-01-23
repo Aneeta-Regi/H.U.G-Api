@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  school_id: 
+  school_name: MyString
+  volunteer_id: 
+  dra_score_1: 
+  dra_score_2: 
+  dra_score_3: 
+  notes: MyString
+  image: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  school_id: 
+  school_name: MyString
+  volunteer_id: 
+  dra_score_1: 
+  dra_score_2: 
+  dra_score_3: 
+  notes: MyString
+  image: MyString

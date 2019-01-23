@@ -1,0 +1,2 @@
+class AppLink < ApplicationRecord
+end

@@ -1,0 +1,35 @@
+<% message.subject = 'Student Absence Report - ' + @student.first_name %>
+<table width="95%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#F7F7F7">
+  <tbody>
+  <tr>
+    <td colspan="3"><%= email_image_tag("HUG_logo.png") %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h2>Hello, <br> We have noticed that <%= @student.first_name %> has been absent 3 or more times.</h2></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <p><%= @student.school_name %></p>
+      <p>Student <%= @student.first_name %> <%= @student.s_last_name %> has accrued <%=  @absences.size %> absences. <br>
+        <br>
+        <% @absences.each do |abs| %>
+            Date: <%= abs.date.strftime("%m-%d-%Y")%><br>
+            Lesson Missed:<%=abs.lesson_identifier %> <%= abs.lesson_name  %><br>
+            Recorded by: <%= abs.recorded_by  %><br>
+            <br>
+         <% end %> <br>
+
+  </tr>
+  <tr>
+    <td><p><br>
+      Regards,<br>
+      the H.U.G. Team </p></td>
+  </tr>
+  </tbody>
+</table>

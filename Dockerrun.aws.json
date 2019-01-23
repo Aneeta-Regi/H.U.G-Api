@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "app",
+      "image": "138927070466.dkr.ecr.us-east-1.amazonaws.com/hug-api-chris-test-one:latest",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000
+        }
+      ]
+    }
+  ]
+}

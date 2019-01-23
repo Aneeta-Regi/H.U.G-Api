@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acumen_one: 1.5
+  acumen_two: 1.5
+  mood_one: 1
+  mood_two: 1
+  time_one: 1
+  time_two: 1
+  student_id: 1
+
+two:
+  acumen_one: 1.5
+  acumen_two: 1.5
+  mood_one: 1
+  mood_two: 1
+  time_one: 1
+  time_two: 1
+  student_id: 1

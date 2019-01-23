@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lesson_name: MyString
+  summary: MyString
+  total_word: 
+  image: MyString
+
+two:
+  lesson_name: MyString
+  summary: MyString
+  total_word: 
+  image: MyString

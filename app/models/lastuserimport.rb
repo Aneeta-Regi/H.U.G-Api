@@ -1,0 +1,2 @@
+class Lastuserimport < ApplicationRecord
+end

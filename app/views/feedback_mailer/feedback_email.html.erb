@@ -1,0 +1,32 @@
+<table width="95%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#F7F7F7">
+  <tbody>
+  <tr>
+    <td colspan="3"><%= email_image_tag("HUG_logo.png") %></td>
+  </tr>
+  <tr>
+    <td>Date: <%= @feedback.created_at.strftime("%Y-%m-%d") %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h2> We have received feedback from <%= @feedback.vol_name %></h2></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <p><%= email_image_tag(@mood) %></p>
+      <p> Dear HUG Administration Team, <br> <%= @feedback.vol_name %> writes:<br>
+      <strong><%= @feedback.comments %></strong></p>
+
+      <p> Click the volunteer email to send a response <%=  @feedback.email %></p></td>
+  </tr>
+  <tr>
+    <td><p>Thanks and have a great day!<br>
+      Sincerely,<br>
+      HUG Automated Feedback Mailer </p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody>
+</table>

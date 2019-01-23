@@ -1,0 +1,32 @@
+<table width="95%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#F7F7F7">
+  <tbody>
+  <tr>
+    <td colspan="3"><%= email_image_tag("HUG_logo.png") %></td>
+  </tr>
+  <tr>
+    <td>Date: <%= @feedback.created_at.strftime("%Y-%m-%d") %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h2> <%= @feedback.vol_name %> we have received your feedback </h2></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+
+      <p> We are sorry to hear you have had a negative experience. We will address the issue and contact you shortly to follow up. <br>
+        <strong><%= @feedback.comments %></strong></p>
+
+    </td>
+  </tr>
+  <tr>
+    <td><p>Thank you for your feedback<br>
+      Sincerely,<br>
+      HUG Administration Team </p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody>
+</table>

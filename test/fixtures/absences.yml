@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_id: 1
+  date: 2017-12-18 07:36:56
+  vol_name: MyString
+  lesson_id: 1
+  lesson_name: MyString
+  lesson_identifier: MyString
+
+two:
+  student_id: 1
+  date: 2017-12-18 07:36:56
+  vol_name: MyString
+  lesson_id: 1
+  lesson_name: MyString
+  lesson_identifier: MyString

@@ -1,0 +1,24 @@
+<% message.subject = 'Welcome to H.U.G.'%>
+<table width="95%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#F7F7F7">
+  <tbody>
+  <tr>
+    <td colspan="3"><%= email_image_tag("HUG_logo.png") %></td>
+  </tr>
+  <tr>
+    <td><h2> Welcome to H.U.G. <%= @user.first_name %>!</h2></td>
+  </tr>
+  <tr>
+    <td colspan="3"><p>  You've been registered for the Help Us Grow program.
+      Your user name is <%= @user.email %> You will need to set your secure password before you can
+      login to the app. A separate email with the link and information about setting your password
+      has been sent to this address.</p>
+  </tr>
+  <tr>
+    <td><p>Thanks and have a great day!<br>
+      Sincerely,<br>
+      Your Friends at H.U.G. </p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody>
+</table>

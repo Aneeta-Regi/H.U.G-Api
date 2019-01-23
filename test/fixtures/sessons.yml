@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_id: 1
+  student_mood: 1
+  word_missed: 1
+  lesson_id: 1
+  acumen: 1
+  first_attempt: false
+  second_attempt: false
+  user_id: 1
+
+two:
+  student_id: 1
+  student_mood: 1
+  word_missed: 1
+  lesson_id: 1
+  acumen: 1
+  first_attempt: false
+  second_attempt: false
+  user_id: 1

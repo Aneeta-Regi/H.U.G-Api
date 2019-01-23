@@ -1,0 +1,30 @@
+version: 0.2
+environment_variables:
+ plaintext:
+  IMAGE: "image"
+  REPOSITORY: ""
+
+phases:
+  install:
+    commands:
+      # The purpose of replacing the Dockerrun.aws.json variables is to make sure the
+      # beanstalk instance loads the image that was just built
+      - sed -i "s/%REPOSITORY/$REPOSITORY/g" Dockerrun.aws.json
+      - sed -i "s/%IMAGE/$IMAGE/g" Dockerrun.aws.json
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region us-east-1)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t $IMAGE:latest .
+      - docker tag $IMAGE:latest $REPOSITORY.dkr.ecr.us-east-1.amazonaws.com/$IMAGE:latest
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push $REPOSITORY.dkr.ecr.us-east-1.amazonaws.com/$IMAGE:latest
+artifacts:
+  files: './Dockerrun.aws.json'

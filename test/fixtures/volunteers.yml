@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  volunteer_name: MyString
+  commitment_level: MyString
+  phone: MyString
+  second_phone: MyString
+  persona: MyString
+  background_check: false
+  code_of_ethics: false
+  emergency_contact_name: MyString
+  emergency_contact_number: MyString
+  image: MyString
+  notes: MyString
+  email: MyString
+  password: MyString
+
+two:
+  volunteer_name: MyString
+  commitment_level: MyString
+  phone: MyString
+  second_phone: MyString
+  persona: MyString
+  background_check: false
+  code_of_ethics: false
+  emergency_contact_name: MyString
+  emergency_contact_number: MyString
+  image: MyString
+  notes: MyString
+  email: MyString
+  password: MyString
